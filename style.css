@@ -1,0 +1,67 @@
+/* Font standar saja */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Membatasi lebar tampilan di tengah */
+.container {
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+/* Styling untuk input dan tombol agar seragam */
+input, select, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Tombol simpan warna biru */
+#tombol-simpan {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#tombol-simpan:hover {
+    background-color: #0056b3;
+}
+
+/* Bagian list belanja */
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background: #eeeeee;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Tombol hapus warna merah */
+.btn-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    float: right; /* Biar tombolnya ke kanan */
+}
+
+/* Jarak untuk grafik */
+.chart-container {
+    margin-top: 20px;
+}

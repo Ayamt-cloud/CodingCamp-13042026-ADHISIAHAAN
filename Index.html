@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense & Budget Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Expense Visualizer</h1>
+        </header>
+
+        <section class="total-section">
+            <h3>Total Pengeluaran: Rp <span id="total-harga">0</span></h3>
+        </section>
+
+        <section class="input-section">
+            <div class="form-group">
+                <input type="text" id="nama-barang" placeholder="Nama barang (misal: Bakso)">
+                <input type="number" id="harga-barang" placeholder="Harganya">
+                
+                <select id="kategori-barang">
+                    <option value="" disabled selected>-- Pilih Kategori --</option>
+                    <option value="Food">Makanan (Food)</option>
+                    <option value="Transport">Transportasi (Transport)</option>
+                    <option value="Fun">Hiburan (Fun)</option>
+                </select>
+
+                <button id="tombol-simpan">Tambah Transaksi</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="display-section">
+            <div class="list-container">
+                <h4>Riwayat Transaksi</h4>
+                <ul id="daftar-belanja">
+                    </ul>
+            </div>
+
+            <div class="chart-container" style="max-width: 300px; margin: 20px auto;">
+                <canvas id="myChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
